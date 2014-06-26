@@ -30,4 +30,11 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
 	}
+
+    public function beforeSave()
+    {
+        $pass = md5(md5($this->password).Yii::app()->params["salt"]);
+        $this->password = $pass;
+        return true;
+    }
 }

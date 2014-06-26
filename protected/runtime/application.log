@@ -1,0 +1,51 @@
+2014/06/26 13:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "registration".' in W:\home\yii1.1\www\framework\web\CController.php:483
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CController.php(270): CController->missingAction('registration')
+#1 W:\home\yii1.1\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#2 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#3 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+---
+2014/06/26 14:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "protected/views/registration".' in W:\home\yii1.1\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=protected/views/registration
+---
+2014/06/26 14:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "protected/views/registration".' in W:\home\yii1.1\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=protected/views/registration
+---
+2014/06/26 14:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "protected/views/registration".' in W:\home\yii1.1\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=protected/views/registration
+---
+2014/06/26 14:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "protected/views/registration".' in W:\home\yii1.1\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=protected/views/registration
+---
+2014/06/26 14:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "protected/views/registration".' in W:\home\yii1.1\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\home\yii1.1\www\framework\web\CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 W:\home\yii1.1\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 W:\home\yii1.1\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=protected/views/registration
+HTTP_REFERER=http://yii1.1/index.php?r=protected/views/registration
+---

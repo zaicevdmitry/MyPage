@@ -90,7 +90,8 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
+            // проверяем полученные данные и, если результат проверки положительный,
+            // перенаправляем пользователя на предыдущую страницу
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
@@ -98,7 +99,15 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
-	/**
+    /**
+     * Displays the register page
+     */
+    public function actionRegister()
+    {
+
+    }
+
+    /**
 	 * Logs out the current user and redirect to homepage.
 	 */
 	public function actionLogout()
