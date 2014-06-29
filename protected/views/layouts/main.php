@@ -42,7 +42,7 @@
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
-
+    <?php /*echo Yii::app()->bootstrap->init();*/?>
 	<?php echo $content; ?>
 
 	<div class="clear"></div>

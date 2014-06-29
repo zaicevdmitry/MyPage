@@ -2,6 +2,9 @@
 
 class SiteController extends Controller
 {
+
+
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -72,7 +75,24 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
-	/**
+    public function accessRules()
+    {
+        return array(
+            array('allow',  // позволим всем пользователям выполнять действия 'list' и 'show'
+                'actions'=>array('index', 'view'),
+                'users'=>array('*'),
+            ),
+            array('allow', // позволим аутентифицированным пользователям выполнять любые действия
+                'users'=>array('@'),
+            ),
+            array('deny',  // остальным запретим всё
+                'users'=>array('*'),
+            ),
+        );
+    }
+
+
+    /**
 	 * Displays the login page
 	 */
 	public function actionLogin()
@@ -115,4 +135,11 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    public function filters()
+    {
+        return array(
+            array('booster.filters.BootstrapFilter - delete')
+        );
+    }
 }

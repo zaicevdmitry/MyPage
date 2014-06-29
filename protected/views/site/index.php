@@ -1,4 +1,4 @@
-
+﻿
 
 <h1>Welcome!!!</i></h1>
 
@@ -22,7 +22,7 @@
         <?php echo CHtml::activeCheckBox($model,'rememberMe'); ?>
         <?php echo CHtml::activeLabel($model,'rememberMe'); ?>
     </div>
-    <a>Регистрация<code><?php $this->redirect(array('protected/views/registration'))?></code></a>
+    <!--<a>Регистрация<code><?php /*$this->redirect(array('protected/views/registration'))*/?></code></a>-->
 
     <div class="row submit">
         <?php echo CHtml::submitButton('Войти'); ?>
