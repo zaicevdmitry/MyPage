@@ -388,6 +388,8 @@ class Booster extends CApplicationComponent {
 		$this->cs->registerCssFile($this->getAssetsUrl() . "/css/{$name}", $media);
 	}
 
+
+
 	/**
 	 * Register a javascript file in the asset's js folder
 	 *

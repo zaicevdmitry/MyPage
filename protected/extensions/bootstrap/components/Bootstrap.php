@@ -316,4 +316,10 @@ class Bootstrap extends CApplicationComponent
     {
         return '2.0.3';
     }
+
+    public function filters() {
+        return array(
+            array('path.alias.to.bootstrap.filters.BoosterFilter - delete')
+    );
+}
 }

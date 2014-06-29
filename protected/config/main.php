@@ -5,8 +5,8 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap');
-Yii::setPathOfAlias('booster', dirname(__FILE__) . '/../extensions/yiibooster');
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+Yii::setPathOfAlias('booster', dirname(__FILE__).'/../extensions/booster');
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Web Application',
@@ -32,6 +32,8 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.widgets.bootstrap.*',
+        'bootstrap.helpers'
     ),
 
     'modules' => array(
@@ -52,8 +54,9 @@ return array(
             'allowAutoLogin' => true,
         ),
         'bootstrap' => array(
-            'class' => 'booster.components.Bootstrap'
+            'class' => 'bootstrap.components.Bootstrap'
         ),
+
         // uncomment the following to enable URLs in path-format
         /*
         'urlManager'=>array(
